@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+:root {
+  --clr-text-primary: hsl(218deg, 44%, 22%);
+  --clr-text-secondary: hsl(220deg, 15%, 55%);
+  --clr-bg-primary: hsl(0deg, 0%, 100%);
+  --clr-bg-secondary: hsl(212deg, 45%, 89%);
+  --ff-primary: Outfit, sans-serif;
+  --fs-text: 1rem;
+  --fs-heading: 1.3rem;
+  --lh-primary: 1.2;
+  --shadow-primary: 0 1rem 2rem rgba(123, 135, 157, 0.2);
+}
+
+body {
+  background-color: var(--clr-bg-secondary);
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  color: var(--clr-text-primary);
+  line-height: var(--lh-primary);
+  min-width: 375px;
+}
+
+h1,
+.h1 {
+  font-size: var(--fs-heading);
+  font-weight: 700;
+}
+
+.container {
+  display: grid;
+  align-items: center;
+  min-height: 100vh;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.qr-code-card {
+  max-width: 19rem;
+  padding: 1em;
+  background-color: var(--clr-bg-primary);
+  border-radius: 1.25em;
+  box-shadow: var(--shadow-primary);
+  text-align: center;
+}
+.qr-code-card__image {
+  border-radius: 0.75em;
+  margin-bottom: 2em;
+}
+.qr-code-card__title {
+  margin: 1em 0;
+}
+.qr-code-card__subtitle {
+  color: var(--clr-text-secondary);
+  margin: 1em 0 1.5em;
+}/*# sourceMappingURL=style.css.map */
